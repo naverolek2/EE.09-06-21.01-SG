@@ -51,12 +51,15 @@
         </div>
         <div id="gorasrodek">
             <?php 
-            if(!isset($_COOKIE["zmiana_tekstu"])) {
-                setcookie("zmiana_tekstu", "initialized", time() + 360);
-                echo "<p> Dzień dobry. Miło, że nas odwiedziłeś </p>";
+            if(isset($_COOKIE["zmiana_tekstu"])) {
+                echo "<p> Miło nam, że nas znowu odwiedziłeś </p>";
+
             }
             else {
-                echo "<p> Miło nam, że nas znowu odwiedziłeś </p>";
+                echo "<p> Dzień dobry. Miło, że nas odwiedziłeś </p>";
+                setcookie("zmiana_tekstu", "initialized", time() + 360);
+
+
             }
                 
             ?>
