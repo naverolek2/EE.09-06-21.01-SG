@@ -52,7 +52,7 @@
         <div id="gorasrodek">
             <?php 
             if(!isset($_COOKIE["zmiana_tekstu"])) {
-                setcookie("zmiana_tekstu", "Miło nam, że nas znowu odwiedziłeś", time() + 360);
+                setcookie("zmiana_tekstu", "initialized", time() + 360);
                 echo "<p> Dzień dobry. Miło, że nas odwiedziłeś </p>";
             }
             else {
