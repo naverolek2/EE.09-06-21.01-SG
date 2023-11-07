@@ -56,8 +56,8 @@
 
             }
             else {
-                echo "<p> Dzień dobry. Miło, że nas odwiedziłeś </p>";
-                setcookie("zmiana_tekstu", "initialized", time() + 360);
+                echo "<p> Dzień dobry. Sprawdź regulamin naszej strony </p>";
+                setcookie("zmiana_tekstu", "initialized", time() + 36);
 
 
             }
