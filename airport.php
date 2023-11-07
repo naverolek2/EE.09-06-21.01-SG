@@ -57,7 +57,7 @@
             }
             else {
                 echo "<p> Dzień dobry. Sprawdź regulamin naszej strony </p>";
-                setcookie("zmiana_tekstu", "initialized", time() + 36);
+                setcookie("zmiana_tekstu", "initialized", time() + 3600);
 
 
             }
